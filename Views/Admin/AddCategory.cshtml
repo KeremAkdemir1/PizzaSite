@@ -1,0 +1,18 @@
+﻿@model VatanBilgisayar.Models.Data.Category
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+@Html.BeginForm("AddCategory", "Admin", FormMethod.Post)
+<br />
+<br />
+<br />
+<br />
+<br />
+@Html.Label("CategoryName")
+@Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+<br />
+<button class="btn btn-info">Add</button>
